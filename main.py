@@ -1,10 +1,11 @@
 import pandas as pd
 
-data = {
-    "name": ["Ali", "Sara", "Omar"],
-    "age": [23, 21, 25]
-}
+df = pd.read_csv("data/raw/OnlineNewsPopularity/OnlineNewsPopularity.csv")
 
-df = pd.DataFrame(data)
+print(df.shape)
 
-print(df)
+print(df.columns)
+
+print(df.info())
+
+print(df.describe())
